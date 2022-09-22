@@ -36,11 +36,11 @@
             <nav>
                 <ul>
                     <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">GALLERY</a></li>
-                    <li><a href="#">CLIENTS</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#ser">SERVICE</a></li>
+                    <li><a href="#gal">GALLERY</a></li>
+                    <li><a href="#cli">CLIENTS</a></li>
+                    <li><a href="#cont">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
@@ -56,7 +56,7 @@
     </section>
 
     <!-- INTRO -->
-    <section class="intro">
+    <section class="intro" id="about">
         <div class="intro__item intro__item1">
             <div class="intro__item_wrap">
                 <h2>Tradition</h2>
@@ -124,7 +124,7 @@
     </section>
 
     <!-- SERVICES -->
-    <section class="services">
+    <section class="services" id="ser">
         <h2 class="h2__global">OUR SERVICES</h2>
         <div class="services__content">
             <div class="services__item">
@@ -155,7 +155,7 @@
     </section>
 
     <!-- GALLERY -->
-    <section class="gallery">
+    <section class="gallery" id="gal">
         <h2 class="h2__global">OUR GALLERY</h2>
         <div class="gallery__content">
             <figure class="gallery__item gallery__item1">
@@ -216,7 +216,7 @@
     </section>
 
     <!-- TEAM -->
-    <section class="team">
+    <section class="team" id="cli">
         <h2 class="h2__global">BAKE TEAM</h2>
         <div class="team__content">
             <div class="team__item">
@@ -368,7 +368,7 @@
     </section>
 
     <!-- CONTACT -->
-    <section class="contact">
+    <section class="contact" id="cont">
         <h2 class="h2__global">CONTACT</h2>
         <form action="">
             <input type="text" placeholder="Name">
@@ -463,6 +463,13 @@
         </div>
     </section>
 
+    <!-- BACKTOTOP -->
+    <div class="backtotop">
+        <a href="#" class="btt1">
+            <i class="fa fa-angle-up"></i>
+        </a>        
+    </div>
+
     <!-- JQUERY JS -->
     <script src="https://code.jquery.com/jquery-3.6.1.min.js"
         integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
@@ -505,7 +512,11 @@
         });
     </script>
 
-
+    <!-- backtotop JS -->
+    <script src="./js/backtotop.js"></script>
+    <script>
+        backtotop('.btt1','btt2')
+    </script>
 </body>
 
 </html>

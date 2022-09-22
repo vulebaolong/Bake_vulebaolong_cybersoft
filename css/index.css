@@ -9,7 +9,7 @@ html {
     font-family: 'Montserrat', sans-serif;
     font-size: 16px;
     transition: all 0.5s;
-
+    scroll-behavior: smooth;
 }
 
 body {
@@ -49,6 +49,7 @@ header{
     background-color: #4e2a84;
     padding: 20px 0;
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     width: 100%;
@@ -619,7 +620,7 @@ header .header_content nav ul li a:hover {
 .footer .footer__content .footer__item form button {
     padding: 7px 16px;
     color: black;
-    border-color: #ff0e83;
+    border: none;
     font-weight: 700;
     margin-bottom: 24px;
 }
@@ -653,3 +654,37 @@ header .header_content nav ul li a:hover {
 .footer .footer__copyright p span {
     color: #ff0e83;
 }
+
+
+.backtotop a i{
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    font-size: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 50px;
+    right: 65px;
+    border-radius: 50%;
+
+    color: #0BBBCC;
+    border: 2px solid #0BBBCC;    
+    transition: all .5s;
+}
+
+.backtotop a i:hover {
+    color: #4e2a84;
+    border: 2px solid #4e2a84;
+}
+
+.btt1 {
+    opacity: 0;
+    visibility: hidden;
+    transition: all .5s;
+}
+
+.btt2 {
+    opacity: 1;
+    visibility:visible;
+}
+
