@@ -31,23 +31,23 @@
 <body>
     <!-- HEADER -->
     <header>
-        <div class="header_content">
+        <div class="header_content" >
             <a href="#">BAKE</a>
             <nav>
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#ser">SERVICE</a></li>
-                    <li><a href="#gal">GALLERY</a></li>
-                    <li><a href="#cli">CLIENTS</a></li>
-                    <li><a href="#cont">CONTACT</a></li>
+                <ul class="parent">
+                    <li><a class="children active" href="#home">HOME</a></li>
+                    <li><a class="children" href="#about">ABOUT</a></li>
+                    <li><a class="children" href="#ser">SERVICE</a></li>
+                    <li><a class="children" href="#gal">GALLERY</a></li>
+                    <li><a class="children" href="#cli">CLIENTS</a></li>
+                    <li><a class="children" href="#cont">CONTACT</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
     <!-- CAROUSEL -->
-    <section class="carousel">
+    <section class="carousel" id="home">
         <div class="carousel__content">
             <h1>Best Bake Here</h1>
             <p>Donec at massa nec sem eleifend fermentum.</p>
@@ -370,7 +370,7 @@
     <!-- CONTACT -->
     <section class="contact" id="cont">
         <h2 class="h2__global">CONTACT</h2>
-        <form action="">
+        <form action="#">
             <input type="text" placeholder="Name">
             <input type="text" placeholder="Last Name">
             <input type="text" placeholder="Email">
@@ -451,7 +451,7 @@
             </div>
             <div class="footer__item">
                 <h3>SUBSCRIBE US</h3>
-                <form action="">
+                <form action="#">
                     <input type="text" placeholder="name@example.com">
                     <button class="button1">Send</button>
                 </form>
@@ -513,9 +513,10 @@
     </script>
 
     <!-- backtotop JS -->
-    <script src="./js/backtotop.js"></script>
+    <script src="./js/main.js"></script>
     <script>
         backtotop('.btt1','btt2')
+        active('.parent','.children')
     </script>
 </body>
 

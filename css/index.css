@@ -44,6 +44,10 @@ body {
     letter-spacing: 2px;
 }
 
+.active {
+    color: #ff0e83 !important;
+}
+
 /* HEADER */
 header{
     background-color: #4e2a84;
@@ -88,7 +92,7 @@ header .header_content nav ul li a {
     font-size: 0.75rem;
     font-weight: 700;    
     letter-spacing: 2px;
-    transition: all 0.5s;
+    transition: all .3s;
 }
 
 header .header_content nav ul li a:hover {
